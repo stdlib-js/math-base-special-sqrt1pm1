@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-sqrt1pm1",
-  "version": "0.0.0",
+  "version": "0.0.6",
   "description": "Compute sqrt(1 + x) - 1.",
   "license": "Apache-2.0 AND BSL-1.0",
   "author": {
