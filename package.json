@@ -38,10 +38,12 @@
   },
   "dependencies": {
     "@stdlib/math-base-assert-is-nan": "^0.0.x",
+    "@stdlib/math-base-napi-unary": "^0.0.x",
     "@stdlib/math-base-special-abs": "^0.0.x",
     "@stdlib/math-base-special-expm1": "^0.0.x",
     "@stdlib/math-base-special-log1p": "^0.0.x",
-    "@stdlib/math-base-special-sqrt": "^0.0.x"
+    "@stdlib/math-base-special-sqrt": "^0.0.x",
+    "@stdlib/utils-library-manifest": "^0.0.x"
   },
   "devDependencies": {
     "@stdlib/bench": "^0.0.x",
@@ -49,9 +51,10 @@
     "@stdlib/constants-float64-pinf": "^0.0.x",
     "@stdlib/math-base-special-round": "^0.0.x",
     "@stdlib/random-base-randu": "^0.0.x",
+    "@stdlib/utils-try-require": "^0.0.x",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
-    "tap-min": "2.x.x"
+    "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
   },
   "engines": {
     "node": ">=0.10.0",
