@@ -30,8 +30,8 @@ var sqrt1pm1 = require( './../../dist' );
 
 // FIXTURES //
 
-var large = require( './../..xtures/cpp/large.json' );
-var small = require( './../..xtures/cpp/small.json' );
+var large = require( './../fixtures/cpp/large.json' );
+var small = require( './../fixtures/cpp/small.json' );
 
 
 // TESTS //
