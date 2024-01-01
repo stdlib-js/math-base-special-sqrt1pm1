@@ -35,30 +35,38 @@ limitations under the License.
 
 > Compute `sqrt( 1 + x ) - 1`.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-special-sqrt1pm1
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var sqrt1pm1 = require( '@stdlib/math-base-special-sqrt1pm1' );
+sqrt1pm1 = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrt1pm1@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var sqrt1pm1 = require( 'path/to/vendor/umd/math-base-special-sqrt1pm1/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrt1pm1@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.sqrt1pm1;
+})();
+</script>
 ```
 
 #### sqrt1pm1( x )
@@ -95,10 +103,15 @@ v = sqrt1pm1( NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var randu = require( '@stdlib/random-base-randu' );
-var round = require( '@stdlib/math-base-special-round' );
-var sqrt1pm1 = require( '@stdlib/math-base-special-sqrt1pm1' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrt1pm1@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var x;
 var i;
@@ -107,6 +120,11 @@ for ( i = 0; i < 100; i++ ) {
     x = round( randu() * 100.0 );
     console.log( 'sqrt(1+%d) - 1 = %d', x, sqrt1pm1( x ) );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -115,93 +133,7 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- C interface documentation. -->
 
-* * *
 
-<section class="c">
-
-## C APIs
-
-<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
-
-<section class="intro">
-
-</section>
-
-<!-- /.intro -->
-
-<!-- C usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```c
-#include "stdlib/math/base/special/sqrt1pm1.h"
-```
-
-#### stdlib_base_sqrt1pm1( x )
-
-Computes `sqrt( 1 + x ) - 1` more accurately for small `x`. 
-
-```c
-double out = stdlib_base_sqrt1pm1( 3.0 );
-// returns 1.0
-
-out = stdlib_base_sqrt1pm1( 0.5 );
-// returns ~0.225
-```
-
-The function accepts the following arguments:
-
--   **x**: `[in] double` input value.
-
-```c
-double stdlib_base_sqrt1pm1( const double x );
-```
-
-</section>
-
-<!-- /.usage -->
-
-<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="notes">
-
-</section>
-
-<!-- /.notes -->
-
-<!-- C API usage examples. -->
-
-<section class="examples">
-
-### Examples
-
-```c
-#include "stdlib/math/base/special/sqrt1pm1.h"
-#include <stdlib.h>
-#include <stdio.h>
-
-int main( void ) {
-    double x;
-    double v;
-    int i;
-    
-    for ( i = 0; i < 100; i++ ) {
-        x = ( (double)rand() / (double)RAND_MAX ) * 100.0;
-        v = stdlib_base_sqrt1pm1( x );
-        printf( "sqrt(1+%lf) - 1 = %lf\n", x, v );
-    }
-}
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -281,7 +213,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/sqrt]: https://github.com/stdlib-js/math-base-special-sqrt
+[@stdlib/math/base/special/sqrt]: https://github.com/stdlib-js/math-base-special-sqrt/tree/umd
 
 <!-- </related-links> -->
 
