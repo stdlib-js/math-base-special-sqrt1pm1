@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import sqrt1pm1 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrt1pm1@esm/index.mjs';
+import sqrt1pm1 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrt1pm1@v0.2.0-esm/index.mjs';
 ```
 
 #### sqrt1pm1( x )
@@ -87,7 +87,7 @@ v = sqrt1pm1( NaN );
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
-import sqrt1pm1 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrt1pm1@esm/index.mjs';
+import sqrt1pm1 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrt1pm1@v0.2.0-esm/index.mjs';
 
 var x;
 var i;
