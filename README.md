@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import sqrt1pm1 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrt1pm1@esm/index.mjs';
+import sqrt1pm1 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrt1pm1@v0.2.4-esm/index.mjs';
 ```
 
 #### sqrt1pm1( x )
@@ -87,7 +87,7 @@ v = sqrt1pm1( NaN );
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import sqrt1pm1 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrt1pm1@esm/index.mjs';
+import sqrt1pm1 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrt1pm1@v0.2.4-esm/index.mjs';
 
 var opts = {
     'dtype': 'float64'
