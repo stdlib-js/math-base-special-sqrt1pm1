@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-27)
+## Unreleased (2026-09-04)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`8325057`](https://github.com/stdlib-js/stdlib/commit/8325057f59dacc6c43fbb3fa5c1026bf3cc5c296) - **docs:** add equations [(#14695)](https://github.com/stdlib-js/stdlib/pull/14695) _(by Karan Anand)_
 -   [`b21013e`](https://github.com/stdlib-js/stdlib/commit/b21013eda09578053481612adf7a1958b3fe0f34) - **test:** migrate `math/base/special/sqrt1pm1` to ULP-based testing [(#13693)](https://github.com/stdlib-js/stdlib/pull/13693) _(by Ujjwal Verma)_
 -   [`b953edd`](https://github.com/stdlib-js/stdlib/commit/b953edd95d0ca1b521d0abbd2c2719d099ff7807) - **refactor:** use `constants/float64/nan` and clean-up [(#13585)](https://github.com/stdlib-js/stdlib/pull/13585) _(by Philipp Burckhardt)_
 -   [`1ac0545`](https://github.com/stdlib-js/stdlib/commit/1ac0545653898f2f1c6943f52d42afb9d46195c6) - **chore:** update tests and use string interpolation in `math/base/special/sqrt1pm1` [(#10324)](https://github.com/stdlib-js/stdlib/pull/10324) _(by Shubham)_
@@ -26,8 +27,9 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
+-   Karan Anand
 -   Philipp Burckhardt
 -   Shubham
 -   Ujjwal Verma
