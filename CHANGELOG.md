@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-08)
+## Unreleased (2026-11-10)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`2b568bd`](https://github.com/stdlib-js/stdlib/commit/2b568bd727177f95feae9cd3f940084030631b50) - **build:** compile C++ Boost benchmarks with C++14 [(#16556)](https://github.com/stdlib-js/stdlib/pull/16556) _(by Mara Averick)_
 -   [`4ff1612`](https://github.com/stdlib-js/stdlib/commit/4ff16126926ce482b471012528ec526d39cdd1d2) - **build:** upgrade Boost & compile C++ test fixture runners w C++14 [(#16545)](https://github.com/stdlib-js/stdlib/pull/16545) _(by Mara Averick)_
 -   [`8325057`](https://github.com/stdlib-js/stdlib/commit/8325057f59dacc6c43fbb3fa5c1026bf3cc5c296) - **docs:** add equations [(#14695)](https://github.com/stdlib-js/stdlib/pull/14695) _(by Karan Anand)_
 -   [`b21013e`](https://github.com/stdlib-js/stdlib/commit/b21013eda09578053481612adf7a1958b3fe0f34) - **test:** migrate `math/base/special/sqrt1pm1` to ULP-based testing [(#13693)](https://github.com/stdlib-js/stdlib/pull/13693) _(by Ujjwal Verma)_
